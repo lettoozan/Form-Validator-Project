@@ -1,0 +1,18 @@
+.card {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.col-5 {
+    width: 400px !important;
+}
+label, .form-control {
+    margin-bottom: 7px;
+}
+.btn {
+    margin-top: 5px;
+    width: 100%;
+}
+.error {
+    margin-bottom: 7px;
+    border: 25px solid red;
+}
