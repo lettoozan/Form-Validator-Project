@@ -17,13 +17,13 @@ username.addEventListener('input', validate);
 
 function validate(e) {
 
-    if(username.value.length <= 3 || username.value === " ") {
+    if(username.value.length <= 3 || username.value.indexOf(" ") != -1) {
         username.className = ('form-control is-invalid');
-        console.log(username.value, username.value.length);
+        console.log(username.value.indexOf(" "));
     }
     else {
         username.className = ('form-control is-valid');
-        console.log(username.value, username.value.length);
+        console.log(username.value.indexOf(" "));
     }
 }
 
