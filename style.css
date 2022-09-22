@@ -1,4 +1,4 @@
-.card {
+ .card {
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -12,7 +12,7 @@ label, .form-control {
     margin-top: 5px;
     width: 100%;
 }
-.error {
-    margin-bottom: 7px;
-    border: 25px solid red;
+#username_error {
+    color: red;
+    font-size: 13px;
 }
