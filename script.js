@@ -12,7 +12,6 @@ phone.addEventListener('input', phone_validate);
 password.addEventListener('input', password_validate);
 re_password.addEventListener('input', re_password_validate);
 
-var true_username;
 
 function user_validate(e) {
     console.log('username')
@@ -25,7 +24,6 @@ function user_validate(e) {
         username.className = ('form-control is-valid');
         document.getElementById('username_error').innerHTML = null;
     }
-    true_username = username.className;
 }
 function email_validate(e) {
     console.log(true_username);
@@ -70,34 +68,5 @@ function re_password_validate(e) {
     else {
         re_password.className = ('form-control is-valid');
         document.getElementById('re-password_error').innerHTML = null;
-        //ex.push("re")
     }
 }
-console.log(true_username);
-if(true_username == ('form-control is valid')) {
-    function alert_button() {
-        alert("Doğru");
-    }
-}else {
-    function alert_button() {
-        alert("Yanlış");
-    }
-}
-//console.log(ex);
-// const ex = [(username).value.indexOf(""),(email).value.indexOf("")]
-
-// if (ex[0]===-1){
-//     console.log("passeddd");
-// }
-// if(ex)
-
-// if ((username, email, phone, password, re_password).className == ('form-control is-valid')) {
-//     function alert_button() {
-//         alert("Doğru");
-//     }
-// }else {
-//     function alert_button() {
-//         alert("Yanlış");
-//     }
-// }
-
